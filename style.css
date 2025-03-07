@@ -1,0 +1,58 @@
+body {
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+nav {
+    background-color: rgb(0, 0, 0);
+}
+
+.Hub {
+    color: rgb(148, 34, 34);
+}
+
+.logo {
+    font-size: larger;
+    font-size: 40px;
+    font-weight: 900;
+}
+
+.login {
+    padding: 3px;
+    border: 2px solid black;
+    border-radius: 5px;
+    background: whitesmoke;
+    color: black;
+}
+
+.cart {
+    padding: 3px;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: rgb(67, 167, 67);
+}
+
+.bar>ul>li:hover {
+    color: rgba(243, 214, 49, 0.803);
+}
+
+.med {
+    background-color: white;
+
+}
+
+.section-border {
+    border-radius: 10px;
+}
+
+.footer {
+    background: white;
+}
+
+.add-btn {
+    background: rgb(73, 144, 73);
+}
+
+.items {
+    box-shadow: 0 4px 8px 0 rgba(173, 222, 26, 0.2), 0 6px 20px 0 rgba(249, 210, 210, 0.869);
+}

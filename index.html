@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MedHub</title>
+    <link rel="stylesheet" href="/src/output.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+<body>
+    <nav class="flex justify-between min-h-18 items-center z-10 sticky top-0 ">
+        <div class="cont flex">
+            <div class="slidebar">
+                <button class="slide">
+                    <img src="/images/sidebar-512.webp" alt="img" class="h-6 mt-5 ml-2 invert hover:bg-slate-500">
+                </button>
+            </div>
+            <div class="logo ml-3">
+                <span class="Hub">Med</span>Hub
+            </div>
+        </div>
+        <div class="cont2 flex space-x-6 mr-2.5">
+            <div class="login">
+                Login
+            </div>
+            <div class="cart">
+                MyCart
+            </div>
+        </div>
+    </nav>
+
+
+    <aside class="flex gap-10">
+        <div class="bar  font-bold border-y-0 border-x-2 border-black z-1000">
+            <ul class=" mt-2 space-y-10 ml-7 fixed">
+
+
+                <li class="dashboard flex justify-start items-center gap-3"><span class="material-symbols-outlined">
+                        dashboard
+                    </span>Dashboard</li>
+                <li class="flex justify-start items-center  gap-3"><span class="material-symbols-outlined">
+                        search
+                    </span>Doctor</li>
+                <li class="flex justify-start items-center  gap-3"><span class="material-symbols-outlined">
+                        list_alt
+                    </span>Order</li>
+                <li class="flex justify-start items-center  gap-3"><span class="material-symbols-outlined">
+                        security
+                    </span>Security & Privacy</li>
+                <li class="flex justify-start items-center  gap-3"><span class="material-symbols-outlined">
+                        person
+                    </span>Account</li>
+
+                <li class="flex justify-start items-center  gap-3"><span class="material-symbols-outlined">
+                        save
+                    </span>Saved</li>
+                <li class="flex justify-start items-center  gap-3"><span class="material-symbols-outlined">
+                        settings
+                    </span>Settings</li>
+                <li class="flex justify-start items-center  gap-3"><span class="material-symbols-outlined">
+                        face
+                    </span>User</li>
+            </ul>
+        </div>
+
+    </aside>
+
+
+    <main class="ml-65">
+
+        <div class="content flex space-x-6 justify-center mb-20 ">
+            <div class="  medhub-product border border-white p-2 ">Medhub product</div>
+            <div class="  baby-care  border border-white p-2 ">Baby care</div>
+            <div class="  women-care  border border-white p-2">Women care</div>
+            <div class="  personal-care  border border-white p-2">Personal care</div>
+            <div class="  home-essentials  border border-white p-2">Home essentials</div>
+            <div class="  health-care  border border-white p-2">Health care</div>
+
+        </div>
+
+        <!-- products -->
+        <div class="best-of-skincare mb-10">
+            <h5 class=" text-4xl font-bold">Best of Skin Care by CeraVe</h5>
+        </div>
+        <section class="products grid grid-cols-4 gap-5">
+
+            <div class="items moisturizer w-60 border-2    ">
+                <img srcset="https://images.apollo247.in/pub/media/catalog/product/c/e/cer0553-1_1__1_1.jpg?tr=q-80,f-webp,w-150,dpr-1,c-at_max 150w, https://images.apollo247.in/pub/media/catalog/product/c/e/cer0553-1_1__1_1.jpg?tr=q-80,f-webp,w-150,dpr-2,c-at_max 300w, https://images.apollo247.in/pub/media/catalog/product/c/e/cer0553-1_1__1_1.jpg?tr=q-80,f-webp,w-150,dpr-3,c-at_max 450w, https://images.apollo247.in/pub/media/catalog/product/c/e/cer0553-1_1__1_1.jpg?tr=q-80,f-webp,w-150,dpr-4,c-at_max 600w, https://images.apollo247.in/pub/media/catalog/product/c/e/cer0553-1_1__1_1.jpg?tr=q-80,f-webp,w-150,dpr-5,c-at_max 750w, https://images.apollo247.in/pub/media/catalog/product/c/e/cer0553-1_1__1_1.jpg?tr=q-80,f-webp,w-150,dpr-6,c-at_max 900w"
+                    src="https://images.apollo247.in/pub/media/catalog/product/c/e/cer0553-1_1__1_1.jpg?tr=q-80,f-webp,w-150,dpr-3,c-at_max 450w"
+                    sizes="150px" alt="Product image" width="140" height="140" loading="lazy" fetchpriority="low"
+                    class="A m-10 ">
+                <p class="text-center">CeraVe Moisturising Lotion 473 ml</p>
+                <p class="font-bold ml-3">MRP:1440</p>
+                <input type="button" value="ADD"
+                    class="add-btn p-2 ml-1 mb-1.5 mt-1.5 border-2 border-white w-56 h-10 rounded-3xl">
+            </div>
+
+            <div class="items w-60 border-2    ">
+                <img srcset="https://images.apollo247.in/pub/media/catalog/product/c/e/cer0558-1_1_.jpg?tr=q-80,f-webp,w-150,dpr-1,c-at_max 150w, https://images.apollo247.in/pub/media/catalog/product/c/e/cer0558-1_1_.jpg?tr=q-80,f-webp,w-150,dpr-2,c-at_max 300w, https://images.apollo247.in/pub/media/catalog/product/c/e/cer0558-1_1_.jpg?tr=q-80,f-webp,w-150,dpr-3,c-at_max 450w, https://images.apollo247.in/pub/media/catalog/product/c/e/cer0558-1_1_.jpg?tr=q-80,f-webp,w-150,dpr-4,c-at_max 600w, https://images.apollo247.in/pub/media/catalog/product/c/e/cer0558-1_1_.jpg?tr=q-80,f-webp,w-150,dpr-5,c-at_max 750w, https://images.apollo247.in/pub/media/catalog/product/c/e/cer0558-1_1_.jpg?tr=q-80,f-webp,w-150,dpr-6,c-at_max 900w"
+                    src="https://images.apollo247.in/pub/media/catalog/product/c/e/cer0558-1_1_.jpg?tr=q-80,f-webp,w-150,dpr-3,c-at_max 450w"
+                    sizes="150px" alt="Product image" width="140" height="140" loading="lazy" fetchpriority="low"
+                    class="A m-10 ">
+                <p class="text-center">CeraVe Moisturising Cream 454 ml</p>
+                <p class="font-bold ml-3">MRP:1620</p>
+                <input type="button" value="ADD"
+                    class="add-btn p-2 ml-1 mb-1.5 mt-1.5 border-2 border-white w-56 h-10 rounded-3xl">
+            </div>
+            <div class="items w-60 border-2    ">
+                <img srcset="https://images.apollo247.in/pub/media/catalog/product/c/e/cer0558-1_1_.jpg?tr=q-80,f-webp,w-150,dpr-1,c-at_max 150w, https://images.apollo247.in/pub/media/catalog/product/c/e/cer0558-1_1_.jpg?tr=q-80,f-webp,w-150,dpr-2,c-at_max 300w, https://images.apollo247.in/pub/media/catalog/product/c/e/cer0558-1_1_.jpg?tr=q-80,f-webp,w-150,dpr-3,c-at_max 450w, https://images.apollo247.in/pub/media/catalog/product/c/e/cer0558-1_1_.jpg?tr=q-80,f-webp,w-150,dpr-4,c-at_max 600w, https://images.apollo247.in/pub/media/catalog/product/c/e/cer0558-1_1_.jpg?tr=q-80,f-webp,w-150,dpr-5,c-at_max 750w, https://images.apollo247.in/pub/media/catalog/product/c/e/cer0558-1_1_.jpg?tr=q-80,f-webp,w-150,dpr-6,c-at_max 900w"
+                    src="https://images.apollo247.in/pub/media/catalog/product/c/e/cer0558-1_1_.jpg?tr=q-80,f-webp,w-150,dpr-3,c-at_max 450w"
+                    sizes="150px" alt="Product image" width="140" height="140" loading="lazy" fetchpriority="low"
+                    class="A m-10 ">
+                <p class="text-center">CeraVe Moisturising Cream 454 ml</p>
+                <p class="font-bold ml-3">MRP:1620</p>
+                <input type="button" value="ADD"
+                    class="add-btn p-2 ml-1 mb-1.5 mt-1.5 border-2 border-white w-56 h-10 rounded-3xl">
+            </div>
+            <div class="items w-60 border-2    ">
+                <img srcset="https://images.apollo247.in/pub/media/catalog/product/c/e/cer0558-1_1_.jpg?tr=q-80,f-webp,w-150,dpr-1,c-at_max 150w, https://images.apollo247.in/pub/media/catalog/product/c/e/cer0558-1_1_.jpg?tr=q-80,f-webp,w-150,dpr-2,c-at_max 300w, https://images.apollo247.in/pub/media/catalog/product/c/e/cer0558-1_1_.jpg?tr=q-80,f-webp,w-150,dpr-3,c-at_max 450w, https://images.apollo247.in/pub/media/catalog/product/c/e/cer0558-1_1_.jpg?tr=q-80,f-webp,w-150,dpr-4,c-at_max 600w, https://images.apollo247.in/pub/media/catalog/product/c/e/cer0558-1_1_.jpg?tr=q-80,f-webp,w-150,dpr-5,c-at_max 750w, https://images.apollo247.in/pub/media/catalog/product/c/e/cer0558-1_1_.jpg?tr=q-80,f-webp,w-150,dpr-6,c-at_max 900w"
+                    src="https://images.apollo247.in/pub/media/catalog/product/c/e/cer0558-1_1_.jpg?tr=q-80,f-webp,w-150,dpr-3,c-at_max 450w"
+                    sizes="150px" alt="Product image" width="140" height="140" loading="lazy" fetchpriority="low"
+                    class="A m-10 ">
+                <p class="text-center">CeraVe Moisturising Cream 454 ml</p>
+                <p class="font-bold ml-3">MRP:1620</p>
+                <input type="button" value="ADD"
+                    class="add-btn p-2 ml-1 mb-1.5 mt-1.5 border-2 border-white w-56 h-10 rounded-3xl">
+            </div>
+
+            <div class="items w-60 border-2    ">
+                <img srcset="https://images.apollo247.in/pub/media/catalog/product/c/e/cer0558-1_1_.jpg?tr=q-80,f-webp,w-150,dpr-1,c-at_max 150w, https://images.apollo247.in/pub/media/catalog/product/c/e/cer0558-1_1_.jpg?tr=q-80,f-webp,w-150,dpr-2,c-at_max 300w, https://images.apollo247.in/pub/media/catalog/product/c/e/cer0558-1_1_.jpg?tr=q-80,f-webp,w-150,dpr-3,c-at_max 450w, https://images.apollo247.in/pub/media/catalog/product/c/e/cer0558-1_1_.jpg?tr=q-80,f-webp,w-150,dpr-4,c-at_max 600w, https://images.apollo247.in/pub/media/catalog/product/c/e/cer0558-1_1_.jpg?tr=q-80,f-webp,w-150,dpr-5,c-at_max 750w, https://images.apollo247.in/pub/media/catalog/product/c/e/cer0558-1_1_.jpg?tr=q-80,f-webp,w-150,dpr-6,c-at_max 900w"
+                    src="https://images.apollo247.in/pub/media/catalog/product/c/e/cer0558-1_1_.jpg?tr=q-80,f-webp,w-150,dpr-3,c-at_max 450w"
+                    sizes="150px" alt="Product image" width="140" height="140" loading="lazy" fetchpriority="low"
+                    class="A m-10 ">
+                <p class="text-center">CeraVe Moisturising Cream 454 ml</p>
+                <p class="font-bold ml-3">MRP:1620</p>
+                <input type="button" value="ADD"
+                    class="add-btn p-2 ml-1 mb-1.5 mt-1.5 border-2 border-white w-56 h-10 rounded-3xl">
+            </div>
+            <div class="items w-60 border-2    ">
+                <img srcset="https://images.apollo247.in/pub/media/catalog/product/c/e/cer0558-1_1_.jpg?tr=q-80,f-webp,w-150,dpr-1,c-at_max 150w, https://images.apollo247.in/pub/media/catalog/product/c/e/cer0558-1_1_.jpg?tr=q-80,f-webp,w-150,dpr-2,c-at_max 300w, https://images.apollo247.in/pub/media/catalog/product/c/e/cer0558-1_1_.jpg?tr=q-80,f-webp,w-150,dpr-3,c-at_max 450w, https://images.apollo247.in/pub/media/catalog/product/c/e/cer0558-1_1_.jpg?tr=q-80,f-webp,w-150,dpr-4,c-at_max 600w, https://images.apollo247.in/pub/media/catalog/product/c/e/cer0558-1_1_.jpg?tr=q-80,f-webp,w-150,dpr-5,c-at_max 750w, https://images.apollo247.in/pub/media/catalog/product/c/e/cer0558-1_1_.jpg?tr=q-80,f-webp,w-150,dpr-6,c-at_max 900w"
+                    src="https://images.apollo247.in/pub/media/catalog/product/c/e/cer0558-1_1_.jpg?tr=q-80,f-webp,w-150,dpr-3,c-at_max 450w"
+                    sizes="150px" alt="Product image" width="140" height="140" loading="lazy" fetchpriority="low"
+                    class="A m-10 ">
+                <p class="text-center">CeraVe Moisturising Cream 454 ml</p>
+                <p class="font-bold ml-3">MRP:1620</p>
+                <input type="button" value="ADD"
+                    class="add-btn p-2 ml-1 mb-1.5 mt-1.5 border-2 border-white w-56 h-10 rounded-3xl">
+            </div>
+
+            <div class="items w-60 border-2    ">
+                <img srcset="https://images.apollo247.in/pub/media/catalog/product/c/e/cer0558-1_1_.jpg?tr=q-80,f-webp,w-150,dpr-1,c-at_max 150w, https://images.apollo247.in/pub/media/catalog/product/c/e/cer0558-1_1_.jpg?tr=q-80,f-webp,w-150,dpr-2,c-at_max 300w, https://images.apollo247.in/pub/media/catalog/product/c/e/cer0558-1_1_.jpg?tr=q-80,f-webp,w-150,dpr-3,c-at_max 450w, https://images.apollo247.in/pub/media/catalog/product/c/e/cer0558-1_1_.jpg?tr=q-80,f-webp,w-150,dpr-4,c-at_max 600w, https://images.apollo247.in/pub/media/catalog/product/c/e/cer0558-1_1_.jpg?tr=q-80,f-webp,w-150,dpr-5,c-at_max 750w, https://images.apollo247.in/pub/media/catalog/product/c/e/cer0558-1_1_.jpg?tr=q-80,f-webp,w-150,dpr-6,c-at_max 900w"
+                    src="https://images.apollo247.in/pub/media/catalog/product/c/e/cer0558-1_1_.jpg?tr=q-80,f-webp,w-150,dpr-3,c-at_max 450w"
+                    sizes="150px" alt="Product image" width="140" height="140" loading="lazy" fetchpriority="low"
+                    class="A m-10 ">
+                <p class="text-center">CeraVe Moisturising Cream 454 ml</p>
+                <p class="font-bold ml-3">MRP:1620</p>
+                <input type="button" value="ADD"
+                    class="add-btn p-2 ml-1 mb-1.5 mt-1.5 border-2 border-white w-56 h-10 rounded-3xl">
+            </div>
+
+            <div class="items w-60 border-2    ">
+                <img srcset="https://images.apollo247.in/pub/media/catalog/product/c/e/cer0558-1_1_.jpg?tr=q-80,f-webp,w-150,dpr-1,c-at_max 150w, https://images.apollo247.in/pub/media/catalog/product/c/e/cer0558-1_1_.jpg?tr=q-80,f-webp,w-150,dpr-2,c-at_max 300w, https://images.apollo247.in/pub/media/catalog/product/c/e/cer0558-1_1_.jpg?tr=q-80,f-webp,w-150,dpr-3,c-at_max 450w, https://images.apollo247.in/pub/media/catalog/product/c/e/cer0558-1_1_.jpg?tr=q-80,f-webp,w-150,dpr-4,c-at_max 600w, https://images.apollo247.in/pub/media/catalog/product/c/e/cer0558-1_1_.jpg?tr=q-80,f-webp,w-150,dpr-5,c-at_max 750w, https://images.apollo247.in/pub/media/catalog/product/c/e/cer0558-1_1_.jpg?tr=q-80,f-webp,w-150,dpr-6,c-at_max 900w"
+                    src="https://images.apollo247.in/pub/media/catalog/product/c/e/cer0558-1_1_.jpg?tr=q-80,f-webp,w-150,dpr-3,c-at_max 450w"
+                    sizes="150px" alt="Product image" width="140" height="140" loading="lazy" fetchpriority="low"
+                    class="A m-10 ">
+                <p class="text-center">CeraVe Moisturising Cream 454 ml</p>
+                <p class="font-bold ml-3">MRP:1620</p>
+                <input type="button" value="ADD"
+                    class="add-btn p-2 ml-1 mb-1.5 mt-1.5 border-2 border-white w-56 h-10 rounded-3xl">
+            </div>
+            <div class="items w-60 border-2    ">
+                <img srcset="https://images.apollo247.in/pub/media/catalog/product/c/e/cer0558-1_1_.jpg?tr=q-80,f-webp,w-150,dpr-1,c-at_max 150w, https://images.apollo247.in/pub/media/catalog/product/c/e/cer0558-1_1_.jpg?tr=q-80,f-webp,w-150,dpr-2,c-at_max 300w, https://images.apollo247.in/pub/media/catalog/product/c/e/cer0558-1_1_.jpg?tr=q-80,f-webp,w-150,dpr-3,c-at_max 450w, https://images.apollo247.in/pub/media/catalog/product/c/e/cer0558-1_1_.jpg?tr=q-80,f-webp,w-150,dpr-4,c-at_max 600w, https://images.apollo247.in/pub/media/catalog/product/c/e/cer0558-1_1_.jpg?tr=q-80,f-webp,w-150,dpr-5,c-at_max 750w, https://images.apollo247.in/pub/media/catalog/product/c/e/cer0558-1_1_.jpg?tr=q-80,f-webp,w-150,dpr-6,c-at_max 900w"
+                    src="https://images.apollo247.in/pub/media/catalog/product/c/e/cer0558-1_1_.jpg?tr=q-80,f-webp,w-150,dpr-3,c-at_max 450w"
+                    sizes="150px" alt="Product image" width="140" height="140" loading="lazy" fetchpriority="low"
+                    class="A m-10 ">
+                <p class="text-center">CeraVe Moisturising Cream 454 ml</p>
+                <p class="font-bold ml-3">MRP:1620</p>
+                <input type="button" value="ADD"
+                    class="add-btn p-2 ml-1 mb-1.5 mt-1.5 border-2 border-white w-56 h-10 rounded-3xl">
+            </div>
+
+            <div class="items w-60 border-2    ">
+                <img srcset="https://images.apollo247.in/pub/media/catalog/product/c/e/cer0558-1_1_.jpg?tr=q-80,f-webp,w-150,dpr-1,c-at_max 150w, https://images.apollo247.in/pub/media/catalog/product/c/e/cer0558-1_1_.jpg?tr=q-80,f-webp,w-150,dpr-2,c-at_max 300w, https://images.apollo247.in/pub/media/catalog/product/c/e/cer0558-1_1_.jpg?tr=q-80,f-webp,w-150,dpr-3,c-at_max 450w, https://images.apollo247.in/pub/media/catalog/product/c/e/cer0558-1_1_.jpg?tr=q-80,f-webp,w-150,dpr-4,c-at_max 600w, https://images.apollo247.in/pub/media/catalog/product/c/e/cer0558-1_1_.jpg?tr=q-80,f-webp,w-150,dpr-5,c-at_max 750w, https://images.apollo247.in/pub/media/catalog/product/c/e/cer0558-1_1_.jpg?tr=q-80,f-webp,w-150,dpr-6,c-at_max 900w"
+                    src="https://images.apollo247.in/pub/media/catalog/product/c/e/cer0558-1_1_.jpg?tr=q-80,f-webp,w-150,dpr-3,c-at_max 450w"
+                    sizes="150px" alt="Product image" width="140" height="140" loading="lazy" fetchpriority="low"
+                    class="A m-10 ">
+                <p class="text-center">CeraVe Moisturising Cream 454 ml</p>
+                <p class="font-bold ml-3">MRP:1620</p>
+                <input type="button" value="ADD"
+                    class="add-btn p-2 ml-1 mb-1.5 mt-1.5 border-2 border-white w-56 h-10 rounded-3xl">
+            </div>
+
+
+        </section>
+
+
+        <div class="banner mt-20 mb-20">
+            <a class="bj_" href="/circle-landing" aria-label="Banner"><img
+                    srcset="https://images.apollo247.in/images/home-screen/contentful/Circle_Banner_Web.png?tr=q-80,f-webp,w-1300,dpr-1,c-at_max 1300w, https://images.apollo247.in/images/home-screen/contentful/Circle_Banner_Web.png?tr=q-80,f-webp,w-1300,dpr-2,c-at_max 2600w, https://images.apollo247.in/images/home-screen/contentful/Circle_Banner_Web.png?tr=q-80,f-webp,w-1300,dpr-3,c-at_max 3900w, https://images.apollo247.in/images/home-screen/contentful/Circle_Banner_Web.png?tr=q-80,f-webp,w-1300,dpr-4,c-at_max 5200w, https://images.apollo247.in/images/home-screen/contentful/Circle_Banner_Web.png?tr=q-80,f-webp,w-1300,dpr-5,c-at_max 6500w, https://images.apollo247.in/images/home-screen/contentful/Circle_Banner_Web.png?tr=q-80,f-webp,w-1300,dpr-6,c-at_max 7800w"
+                    src="https://images.apollo247.in/images/home-screen/contentful/Circle_Banner_Web.png?tr=q-80,f-webp,w-1300,dpr-2,c-at_max 2600w"
+                    sizes="1300px" alt="image icons" width="1276" height="150" loading="eager" fetchpriority="high"
+                    class="Mn eager cj_" style="object-fit: contain;"></a>
+        </div>
+
+
+
+        <h2 class="text-4xl font-bold mb-10">Browse by Health Condition</h2>
+        <div class="browse-by-condition grid grid-cols-5 gap-5 ">
+            <div class="h-20 w-50 bg-white border-2 border-white rounded-2xl flex justify-around items-center">
+                <img srcset="https://images.apollo247.in/pub/media/healtharea/247images/d/i/diabetic_1.png?tr=q-80,f-webp,w-100,dpr-1,c-at_max 100w, https://images.apollo247.in/pub/media/healtharea/247images/d/i/diabetic_1.png?tr=q-80,f-webp,w-100,dpr-2,c-at_max 200w, https://images.apollo247.in/pub/media/healtharea/247images/d/i/diabetic_1.png?tr=q-80,f-webp,w-100,dpr-3,c-at_max 300w, https://images.apollo247.in/pub/media/healtharea/247images/d/i/diabetic_1.png?tr=q-80,f-webp,w-100,dpr-4,c-at_max 400w, https://images.apollo247.in/pub/media/healtharea/247images/d/i/diabetic_1.png?tr=q-80,f-webp,w-100,dpr-5,c-at_max 500w, https://images.apollo247.in/pub/media/healtharea/247images/d/i/diabetic_1.png?tr=q-80,f-webp,w-100,dpr-6,c-at_max 600w"
+                    src="https://images.apollo247.in/pub/media/healtharea/247images/d/i/diabetic_1.png?tr=q-80,f-webp,w-100,dpr-3,c-at_max 300w"
+                    sizes="100px" alt="Product Image" width="50" height="50" loading="lazy" fetchpriority="low"
+                    class="A  ">
+                <p class=" text-black">Diabetes Care</p>
+
+            </div>
+            <div class="h-20 w-50 bg-white border-2 border-white rounded-2xl flex justify-around items-center">
+                <img srcset="https://images.apollo247.in/pub/media/healtharea/247images/c/a/cardio_1.png?tr=q-80,f-webp,w-100,dpr-1,c-at_max 100w, https://images.apollo247.in/pub/media/healtharea/247images/c/a/cardio_1.png?tr=q-80,f-webp,w-100,dpr-2,c-at_max 200w, https://images.apollo247.in/pub/media/healtharea/247images/c/a/cardio_1.png?tr=q-80,f-webp,w-100,dpr-3,c-at_max 300w, https://images.apollo247.in/pub/media/healtharea/247images/c/a/cardio_1.png?tr=q-80,f-webp,w-100,dpr-4,c-at_max 400w, https://images.apollo247.in/pub/media/healtharea/247images/c/a/cardio_1.png?tr=q-80,f-webp,w-100,dpr-5,c-at_max 500w, https://images.apollo247.in/pub/media/healtharea/247images/c/a/cardio_1.png?tr=q-80,f-webp,w-100,dpr-6,c-at_max 600w"
+                    src="https://images.apollo247.in/pub/media/healtharea/247images/c/a/cardio_1.png?tr=q-80,f-webp,w-100,dpr-3,c-at_max 300w"
+                    sizes="100px" alt="Product Image" width="50" height="50" loading="lazy" fetchpriority="low"
+                    class="A  ">
+                <p class=" text-black">Cardiac Care</p>
+
+            </div>
+            <div class="h-20 w-50 bg-white border-2 border-white rounded-2xl flex justify-around items-center">
+                <img srcset="https://images.apollo247.in/pub/media/healtharea/247images/g/r/group-10_1.png?tr=q-80,f-webp,w-100,dpr-1,c-at_max 100w, https://images.apollo247.in/pub/media/healtharea/247images/g/r/group-10_1.png?tr=q-80,f-webp,w-100,dpr-2,c-at_max 200w, https://images.apollo247.in/pub/media/healtharea/247images/g/r/group-10_1.png?tr=q-80,f-webp,w-100,dpr-3,c-at_max 300w, https://images.apollo247.in/pub/media/healtharea/247images/g/r/group-10_1.png?tr=q-80,f-webp,w-100,dpr-4,c-at_max 400w, https://images.apollo247.in/pub/media/healtharea/247images/g/r/group-10_1.png?tr=q-80,f-webp,w-100,dpr-5,c-at_max 500w, https://images.apollo247.in/pub/media/healtharea/247images/g/r/group-10_1.png?tr=q-80,f-webp,w-100,dpr-6,c-at_max 600w"
+                    src="https://images.apollo247.in/pub/media/healtharea/247images/g/r/group-10_1.png?tr=q-80,f-webp,w-100,dpr-3,c-at_max 300w"
+                    sizes="100px" alt="Product Image" width="50" height="50" loading="lazy" fetchpriority="low"
+                    class="A  ">
+                <p class=" text-black">Stomach Care</p>
+
+            </div>
+            <div class="h-20 w-50 bg-white border-2 border-white rounded-2xl flex justify-around items-center">
+                <img srcset="https://images.apollo247.in/pub/media/healtharea/247images/p/a/pain_relief_1.png?tr=q-80,f-webp,w-100,dpr-1,c-at_max 100w, https://images.apollo247.in/pub/media/healtharea/247images/p/a/pain_relief_1.png?tr=q-80,f-webp,w-100,dpr-2,c-at_max 200w, https://images.apollo247.in/pub/media/healtharea/247images/p/a/pain_relief_1.png?tr=q-80,f-webp,w-100,dpr-3,c-at_max 300w, https://images.apollo247.in/pub/media/healtharea/247images/p/a/pain_relief_1.png?tr=q-80,f-webp,w-100,dpr-4,c-at_max 400w, https://images.apollo247.in/pub/media/healtharea/247images/p/a/pain_relief_1.png?tr=q-80,f-webp,w-100,dpr-5,c-at_max 500w, https://images.apollo247.in/pub/media/healtharea/247images/p/a/pain_relief_1.png?tr=q-80,f-webp,w-100,dpr-6,c-at_max 600w"
+                    src="https://images.apollo247.in/pub/media/healtharea/247images/p/a/pain_relief_1.png?tr=q-80,f-webp,w-100,dpr-3,c-at_max 300w"
+                    sizes="100px" alt="Product Image" width="50" height="50" loading="lazy" fetchpriority="low"
+                    class="A  ">
+                <p class=" text-black">Pain Relief</p>
+
+            </div>
+            <div class="h-20 w-50 bg-white border-2 border-white rounded-2xl flex justify-around items-center">
+                <img srcset="https://images.apollo247.in/pub/media/healtharea/247images/l/i/liver_care_1.png?tr=q-80,f-webp,w-100,dpr-1,c-at_max 100w, https://images.apollo247.in/pub/media/healtharea/247images/l/i/liver_care_1.png?tr=q-80,f-webp,w-100,dpr-2,c-at_max 200w, https://images.apollo247.in/pub/media/healtharea/247images/l/i/liver_care_1.png?tr=q-80,f-webp,w-100,dpr-3,c-at_max 300w, https://images.apollo247.in/pub/media/healtharea/247images/l/i/liver_care_1.png?tr=q-80,f-webp,w-100,dpr-4,c-at_max 400w, https://images.apollo247.in/pub/media/healtharea/247images/l/i/liver_care_1.png?tr=q-80,f-webp,w-100,dpr-5,c-at_max 500w, https://images.apollo247.in/pub/media/healtharea/247images/l/i/liver_care_1.png?tr=q-80,f-webp,w-100,dpr-6,c-at_max 600w"
+                    src="https://images.apollo247.in/pub/media/healtharea/247images/l/i/liver_care_1.png?tr=q-80,f-webp,w-100,dpr-3,c-at_max 300w"
+                    sizes="100px" alt="Product Image" width="50" height="50" loading="lazy" fetchpriority="low"
+                    class="A  ">
+                <p class=" text-black">Liver Care</p>
+
+            </div>
+            <div class="h-20 w-50 bg-white border-2 border-white rounded-2xl flex justify-around items-center">
+                <img srcset="https://images.apollo247.in/pub/media/healtharea/247images/g/r/group-5_1.png?tr=q-80,f-webp,w-100,dpr-1,c-at_max 100w, https://images.apollo247.in/pub/media/healtharea/247images/g/r/group-5_1.png?tr=q-80,f-webp,w-100,dpr-2,c-at_max 200w, https://images.apollo247.in/pub/media/healtharea/247images/g/r/group-5_1.png?tr=q-80,f-webp,w-100,dpr-3,c-at_max 300w, https://images.apollo247.in/pub/media/healtharea/247images/g/r/group-5_1.png?tr=q-80,f-webp,w-100,dpr-4,c-at_max 400w, https://images.apollo247.in/pub/media/healtharea/247images/g/r/group-5_1.png?tr=q-80,f-webp,w-100,dpr-5,c-at_max 500w, https://images.apollo247.in/pub/media/healtharea/247images/g/r/group-5_1.png?tr=q-80,f-webp,w-100,dpr-6,c-at_max 600w"
+                    src="https://images.apollo247.in/pub/media/healtharea/247images/g/r/group-5_1.png?tr=q-80,f-webp,w-100,dpr-3,c-at_max 300w"
+                    sizes="100px" alt="Product Image" width="50" height="50" loading="lazy" fetchpriority="low"
+                    class="A  ">
+                <p class=" text-black">Oral Care</p>
+
+            </div>
+            <div class="h-20 w-50 bg-white border-2 border-white rounded-2xl flex justify-around items-center">
+                <img srcset="https://images.apollo247.in/pub/media/healtharea/247images/g/r/group-68_1.png?tr=q-80,f-webp,w-100,dpr-1,c-at_max 100w, https://images.apollo247.in/pub/media/healtharea/247images/g/r/group-68_1.png?tr=q-80,f-webp,w-100,dpr-2,c-at_max 200w, https://images.apollo247.in/pub/media/healtharea/247images/g/r/group-68_1.png?tr=q-80,f-webp,w-100,dpr-3,c-at_max 300w, https://images.apollo247.in/pub/media/healtharea/247images/g/r/group-68_1.png?tr=q-80,f-webp,w-100,dpr-4,c-at_max 400w, https://images.apollo247.in/pub/media/healtharea/247images/g/r/group-68_1.png?tr=q-80,f-webp,w-100,dpr-5,c-at_max 500w, https://images.apollo247.in/pub/media/healtharea/247images/g/r/group-68_1.png?tr=q-80,f-webp,w-100,dpr-6,c-at_max 600w"
+                    src="https://images.apollo247.in/pub/media/healtharea/247images/g/r/group-68_1.png?tr=q-80,f-webp,w-100,dpr-3,c-at_max 300w"
+                    sizes="100px" alt="Product Image" width="50" height="50" loading="lazy" fetchpriority="low"
+                    class="A  ">
+                <p class=" text-black">Respiratory</p>
+
+            </div>
+            <div class="h-20 w-50 bg-white border-2 border-white rounded-2xl flex justify-around items-center">
+                <img srcset="https://images.apollo247.in/pub/media/healtharea/247images/s/e/sexual_health_1.png?tr=q-80,f-webp,w-100,dpr-1,c-at_max 100w, https://images.apollo247.in/pub/media/healtharea/247images/s/e/sexual_health_1.png?tr=q-80,f-webp,w-100,dpr-2,c-at_max 200w, https://images.apollo247.in/pub/media/healtharea/247images/s/e/sexual_health_1.png?tr=q-80,f-webp,w-100,dpr-3,c-at_max 300w, https://images.apollo247.in/pub/media/healtharea/247images/s/e/sexual_health_1.png?tr=q-80,f-webp,w-100,dpr-4,c-at_max 400w, https://images.apollo247.in/pub/media/healtharea/247images/s/e/sexual_health_1.png?tr=q-80,f-webp,w-100,dpr-5,c-at_max 500w, https://images.apollo247.in/pub/media/healtharea/247images/s/e/sexual_health_1.png?tr=q-80,f-webp,w-100,dpr-6,c-at_max 600w"
+                    src="https://images.apollo247.in/pub/media/healtharea/247images/s/e/sexual_health_1.png?tr=q-80,f-webp,w-100,dpr-3,c-at_max 300w"
+                    sizes="100px" alt="Product Image" width="50" height="50" loading="lazy" fetchpriority="low"
+                    class="A  ">
+                <p class=" text-black">Sexual Health</p>
+
+            </div>
+            <div class="h-20 w-50 bg-white border-2 border-white rounded-2xl flex justify-around items-center">
+                <img srcset="https://images.apollo247.in/pub/media/healtharea/247images/e/l/elderly_care_1.png?tr=q-80,f-webp,w-100,dpr-1,c-at_max 100w, https://images.apollo247.in/pub/media/healtharea/247images/e/l/elderly_care_1.png?tr=q-80,f-webp,w-100,dpr-2,c-at_max 200w, https://images.apollo247.in/pub/media/healtharea/247images/e/l/elderly_care_1.png?tr=q-80,f-webp,w-100,dpr-3,c-at_max 300w, https://images.apollo247.in/pub/media/healtharea/247images/e/l/elderly_care_1.png?tr=q-80,f-webp,w-100,dpr-4,c-at_max 400w, https://images.apollo247.in/pub/media/healtharea/247images/e/l/elderly_care_1.png?tr=q-80,f-webp,w-100,dpr-5,c-at_max 500w, https://images.apollo247.in/pub/media/healtharea/247images/e/l/elderly_care_1.png?tr=q-80,f-webp,w-100,dpr-6,c-at_max 600w"
+                    src="https://images.apollo247.in/pub/media/healtharea/247images/e/l/elderly_care_1.png?tr=q-80,f-webp,w-100,dpr-3,c-at_max 300w"
+                    sizes="100px" alt="Product Image" width="50" height="50" loading="lazy" fetchpriority="low"
+                    class="A  ">
+                <p class=" text-black">Elderly Care</p>
+
+            </div>
+            <div class="h-20 w-50 bg-white border-2 border-white rounded-2xl flex justify-around items-center">
+                <img srcset="https://images.apollo247.in/pub/media/healtharea/247images/i/m/immunity_1.png?tr=q-80,f-webp,w-100,dpr-1,c-at_max 100w, https://images.apollo247.in/pub/media/healtharea/247images/i/m/immunity_1.png?tr=q-80,f-webp,w-100,dpr-2,c-at_max 200w, https://images.apollo247.in/pub/media/healtharea/247images/i/m/immunity_1.png?tr=q-80,f-webp,w-100,dpr-3,c-at_max 300w, https://images.apollo247.in/pub/media/healtharea/247images/i/m/immunity_1.png?tr=q-80,f-webp,w-100,dpr-4,c-at_max 400w, https://images.apollo247.in/pub/media/healtharea/247images/i/m/immunity_1.png?tr=q-80,f-webp,w-100,dpr-5,c-at_max 500w, https://images.apollo247.in/pub/media/healtharea/247images/i/m/immunity_1.png?tr=q-80,f-webp,w-100,dpr-6,c-at_max 600w"
+                    src="https://images.apollo247.in/pub/media/healtharea/247images/i/m/immunity_1.png?tr=q-80,f-webp,w-100,dpr-3,c-at_max 300w"
+                    sizes="100px" alt="Product Image" width="50" height="50" loading="lazy" fetchpriority="low"
+                    class="A  ">
+                <p class=" text-black">Cold & Immunity</p>
+
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+        <div class="banner2 mt-20 mb-20"><a class="bj_" href="/glucose-monitoring" aria-label="Banner"><img
+                    srcset="https://images.apollo247.in/images/dtdashboard/DT_Banner_2.png?tr=q-80,f-webp,w-1300,dpr-1,c-at_max 1300w, https://images.apollo247.in/images/dtdashboard/DT_Banner_2.png?tr=q-80,f-webp,w-1300,dpr-2,c-at_max 2600w, https://images.apollo247.in/images/dtdashboard/DT_Banner_2.png?tr=q-80,f-webp,w-1300,dpr-3,c-at_max 3900w, https://images.apollo247.in/images/dtdashboard/DT_Banner_2.png?tr=q-80,f-webp,w-1300,dpr-4,c-at_max 5200w, https://images.apollo247.in/images/dtdashboard/DT_Banner_2.png?tr=q-80,f-webp,w-1300,dpr-5,c-at_max 6500w, https://images.apollo247.in/images/dtdashboard/DT_Banner_2.png?tr=q-80,f-webp,w-1300,dpr-6,c-at_max 7800w"
+                    src="https://images.apollo247.in/images/dtdashboard/DT_Banner_2.png?tr=q-80,f-webp,w-1300,dpr-2,c-at_max 2600w"
+                    sizes="1300px" alt="image icons" width="1276" height="200" loading="eager" fetchpriority="high"
+                    class="Mn eager cj_" style="object-fit: contain;"></a>
+        </div>
+
+        <p class="text-center"><b>HOW IT WORKS</b></p>
+        <div class="steps-of-app flex justify-center gap-10 mt-10 mb-20">
+
+            <div class="open border-2 border-white  h-70 w-70 p-5">
+                <span class="material-symbols-outlined ml-25">
+                    phone_iphone
+                </span>
+                <p class="m-10"><b>Open the app</b></p>
+                <p>Choose from over 7000 products across groceries, fresh fruits & veggies, meat, pet care, beauty items
+                    & more</p>
+            </div>
+            <div class="place-order border-2 border-white  h-70 w-70  p-5">
+                <span class="material-symbols-outlined ml-25">
+                    order_play
+                </span>
+                <p class="m-10"><b>Place an order</b></p>
+                <p> Add your favourite items to the cart & avail the best offers</p>
+            </div>
+            <div class="get-delivery border-2 border-white  h-70 w-70  p-5 ">
+                <span class="material-symbols-outlined ml-25">
+                    local_shipping
+                </span>
+                <p class="m-10"><b> Get free delivery</b></p>
+                <p> Experience lighting-fast speed & get all your items delivered in 10 minutes</p>
+            </div>
+        </div>
+
+        <div class="info mb-20">
+            <h6 class="font-bold ">EFFORTLESS ONLINE MEDICINE ORDERS AT MEDHUB PHARMACY</h6>
+            <p class="mt-5">Because ordering medicines online need not be complicated but rather a cakewalk. And at
+                MedHub Pharmacy
+                we ensure that.
+                All you need to do is:</p>
+            <ul class="list-disc mt-5 ">
+                <li>Browse through our wide variety of products</li>
+                <li>Add products to your cart and complete the payment. Voila!</li>
+                <li>Your order will be on its way to you.</li>
+            </ul>
+            <p class="mt-5">MedHub Pharmacy is your go-to online pharmacy store for all your medicine needs. We also
+                have a range
+                of products in the
+                personal care, baby care, health and nutrition, wellness, and lifestyle categories. Come explore
+                ‘everything under the
+                sun’ related to healthcare at MedHub Pharmacy.</p>
+            <h6 class="font-bold mt-5">Reasons To Buy Medicine From MedHub Pharmacy</h6>
+            <p class="mt-5">For over 39 years, Apollo Pharmacy has been providing you with genuine medicines
+                round-the-clock, through
+                24-hour
+                pharmacies. And now through Apollo Pharmacy, we intend to make your lives easier – by getting your
+                medicines delivered
+                to you. Yes, no more stepping out to get your medicines, no more standing in long queues, no more
+                worrying about the
+                genuineness of medicines, no more sweat! Here are more reasons why you should buy your medicines from
+                Apollo Pharmacy:</p>
+
+            <ul class="list-disc mt-5">
+                <li>Super-fast deliveries. In select cities, deliveries are done in as less as 1 day
+                    Largest pharmacy chain in India with over 5,600 stores
+                </li>
+                <li>Attractive deals on medicines and other FMCG products</li>
+                <li>Get Health Credits on purchases (not applicable on discounted products)
+                </li>
+                <li>Option to consult with a pharmacologist to check medicine interactions
+                    Wide range of healthcare products to choose from</li>
+                <li>Only genuine and top-quality products delivered.</li>
+
+            </ul>
+
+            <h6 class="font-bold mt-5">MedHub Pharmacy - Largest Online Pharmacy In India</h6>
+            <p class="mt-5">With more than 5,600 stores in India, MedHub Pharmacy is not just the largest online
+                pharmacy store in India but in Asia
+                as well. Our pharmacy chain has been operational and been providing genuine quality healthcare products
+                for more than 39
+                years. Our wide range of products ensures that everything you need related to healthcare, you will find
+                it on our
+                platform.</p>
+            <h6 class="font-bold mt-5">Most Trusted Online Medical Store Of India</h6>
+            <p class="mt-5">As pioneers in the healthcare segment, we understand the importance of trust. And that is
+                why, over the years, we worked
+                on building that trust. We ensure that every product sold through our offline/online stores are checked
+                for their
+                authenticity, quality, and compliance with the Central Drugs Standard Control Organization, the national
+                regulatory body
+                for Indian pharmaceuticals and medical devices.</p>
+
+            <h6 class="font-bold mt-5">100% Genuine Medicine From MedHub Pharmacy</h6>
+            <p class="mt-5">All medicines/healthcare products sold on Apollo Pharmacy are procured from our sister
+                company - MedHub
+                Pharmacy, with a
+                reputation of selling only 100% genuine products. The products sold through MedHub Pharmacy are
+                inspected thoroughly to
+                ensure only genuine products make the cut. We believe that when it comes to medicines, quality and
+                authenticity should
+                never be compromised.</p>
+            <h6 class="font-bold mt-5">Fastest Home Delivery Of Your Order</h6>
+            <p class="mt-5">When it comes to medicines, most of us do not want to take a chance. This is why most of us
+                prefer going
+                to a store
+                physically to get medicines. But you know what happens at the stores. First, you need to go there
+                physically which means
+                you have to drive/walk/ride for at least 10-15 minutes. Second, you need to wait for your turn which may
+                come after
+                10-15 minutes. Third, you can only buy the products you are sure about. What if you want to buy an FMCG
+                product but are
+                not sure which one? You cannot expect the pharmacist to give you too many options.
+
+                MedHub Pharmacy is the solution to all these. We deliver the medicines to you without you having to step
+                out or wait in
+                the queue to buy medicines. And we give you the option to browse through a variety of non-pharma
+                products to choose
+                from.
+
+                Are we missing something here? Yes, the time we take to deliver your order. We understand that you may
+                sometimes require
+                medicines in urgency and that is why we assure you the fastest home delivery of your medicines. Also,
+                depending on the
+                city you reside in, medicines can be delivered in 10minutes.</p>
+        </div>
+    </main>
+
+    <footer class="footer h-50 mt-10 flex justify-evenly">
+
+
+        <div class="about-us-footer  mt-3">
+            <ul class="text-black">
+                <li><b>ABOUT US</b></li>
+                <li>About Us</li>
+                <li>Contact Us</li>
+                <li>FAQ's</li>
+                <li>Health Queries</li>
+                <li>Refund policy</li>
+            </ul>
+        </div>
+        <div class="service-footer mt-3">
+            <ul class="text-black">
+                <li><b>SERVICES</b></li>
+                <li>Online Doctor Consultation</li>
+                <li>Online Medicines</li>
+                <li>Cough Scanner</li>
+                <li>All Doctor List</li>
+                <li>Health Program</li>
+            </ul>
+        </div>
+        <div class="book-lab-test-footer mt-3">
+            <ul class="text-black">
+                <li><b>Book Lab Tests at Home</b></li>
+                <li>RT PCR Test At Home</li>
+                <li>Book Lab Tests at Home</li>
+                <li>Renal Profile (KFT, RFT Test)</li>
+                <li>Hemogram Test</li>
+                <li>Widal Test</li>
+            </ul>
+        </div>
+        <div class="product-footer mt-3">
+            <ul class="text-black">
+                <li><b>Product Categories></b></li>
+                <li>Health Care</li>
+                <li>Personal Care</li>
+                <li>Baby Care</li>
+                <li>Nutrition</li>
+                <li>Healthcare Devices</li>
+            </ul>
+        </div>
+        <div class="hospital-footer mt-3">
+            <ul class="text-black">
+                <li><b>Top Hospitals</b></li>
+                <li>Hospital Jubilee Hills</li>
+                <li>Hospitals Greams Road</li>
+                <li>Indraprastha Hospital</li>
+                <li>Hospitals Bannerghatta Road</li>
+                <li>Hopsital - Belapur, Navi Mumbai</li>
+            </ul>
+        </div>
+
+        <!-- </div> -->
+
+    </footer>
+
+</body>
+
+<script src="main.js"></script>
+
+</html>
